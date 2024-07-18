@@ -1,0 +1,33 @@
+body {
+    background-image: url(explore1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+h1, h2, h3{
+    color: aqua;
+}
+ul li{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
+p{
+    background-color: beige;
+    padding: 20px;
+}
+.seeker{
+    font-size: 24px;
+}
+.header {
+    color: azure;
+    text-shadow: 2px 4px 5px blue;
+    font-family: sans-serif
+}
+.table {
+    background: linear-gradient(yellow, lavenderblush);
+    box-shadow: 2px 4px 5px blue
+}
+.why {
+    background: linear-gradient(to right, lightblue, white)
+}
