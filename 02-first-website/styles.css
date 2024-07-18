@@ -1,11 +1,31 @@
+html{
+    font-family: "Roboto Mono", monospace,fantasy, sans-serif, serif;
+}
 body {
+/*
     background-image: url(explore1.jpg);
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+*/
+    text-align: center;
+    background-color: azure            
 }
 h1, h2, h3{
     color: aqua;
 }
+.f1 {
+    font-family: "Open Sans", serif;
+}
+.f2 {
+    font-family: "Roboto Mono";
+}
+.f3{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+.f4 {
+    font-family: Audiowide;
+}
+
 ul li{
     list-style: none;
     text-decoration: none;
