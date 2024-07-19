@@ -12,7 +12,6 @@ footer {
 body {
   margin: 0px;
   line-height: 1;
-  background-color: rgb(21, 149, 149);
 }
 
 /*########### Nav bar ##############*/
@@ -81,6 +80,7 @@ ul.topnav li.dropdownIcon {
 }
 .rightSide-col {
   margin-left: 15%;
+  margin-right: 20px;
 }
 .iframe {
   width: 100%;
@@ -145,6 +145,35 @@ input[type="text"] {
   width: 100%;
 }
 
+.topic {
+  font-size: large;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.part {
+  border: 2px solid #c1bbbb;
+  margin: 5px;
+  text-align: center;
+  padding: 3%;
+  border-radius: 10px;
+  line-height: 25px;
+}
+.part img {
+  border-radius: 10px;
+}
+.container button {
+  padding: 10px;
+  background-color: #067dff;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
+.centerButton {
+  text-align: center;
+  margin: 20px;
+}
+
 /* ############### Mobile #################### */
 @media screen and (max-width: 680px) {
   ul.topnav li:not(:nth-child(1)) {
@@ -185,6 +214,7 @@ input[type="text"] {
     margin: 15px;
     margin-bottom: 20px;
   }
+
   input[type="text"] {
     width: 100%;
   }
