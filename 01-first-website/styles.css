@@ -75,3 +75,29 @@ ul.topnav li.dropdownIcon {
     text-align: left;
   }
 }
+
+/* ################### Landing Section ##################### */
+.container {
+  width: 100%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  margin: auto;
+}
+/*Gradient background*/
+#section-gradient {
+  background: #067dff;
+  background: linear-gradient(#067dff, #65a5ff, #067dff);
+  background: -webkit-linear-gradient(#067dff, #65a5ff, , #067dff);
+  background: -o-linear-gradient(#067dff, #65a5ff, , #067dff);
+  background: -moz-linear-gradient(#067dff, #65a5ff, , #067dff);
+}
+.container h1.larger {
+  font-size: 56px;
+  color: white;
+  margin: 0;
+  line-height: 100px;
+}
+.container h1.large {
+  font-size: 36px;
+  color: white;
+}
