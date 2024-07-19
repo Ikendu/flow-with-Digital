@@ -86,8 +86,17 @@ p{
 /*    max-width: 100%*/
     display: flex;        
 }
+.row::after{
+    display: block
+    clear: both;
+    content: ""        
+}
 .img{
-    width: 300px
+    width: 300px;
+    height: 300px; 
+    object-fit: cover;
+    display: block;
+    margin: auto;
 }
 .col-1 {width: 8.33%}
 .col-2 {width: 16.66%}
@@ -102,11 +111,10 @@ p{
 .col-11 {width: 91.66%}
 .col-12 {width: 100%}
 
-/*
-.row::after{
-    display: block
-    clear: both;
-    content: ""
-        
+[class*="col-"]{
+    border: 2px solid blue;
+    padding: 10px;
+    float:left;
+    overflow: hidden
 }
-*/
+

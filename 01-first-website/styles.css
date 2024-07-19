@@ -1,0 +1,20 @@
+/*########### Default ##############*/
+
+nav,header,footer{
+    display: block
+}
+body{
+    margin: 0;
+    line-height: 1; /* to be tested*/
+}
+
+/*########### Nav bar ##############*/
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+nav ul {
+    background-color: #eee;
+    margin: 0;
+}
