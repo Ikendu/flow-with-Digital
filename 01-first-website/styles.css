@@ -1,4 +1,7 @@
 /*########### Default ##############*/
+html {
+  overflow-x: hidden;
+}
 
 nav,
 header,
@@ -47,34 +50,6 @@ ul.topnav li a:hover {
 ul.topnav li.dropdownIcon {
   display: none;
 }
-/* ############### Nav Mobile #################### */
-
-@media screen and (max-width: 680px) {
-  ul.topnav li:not(:nth-child(1)) {
-    display: none;
-  }
-  ul.topnav li.dropdownIcon {
-    display: block;
-    float: right;
-  }
-  ul.topnav.responseNav {
-    position: relative;
-  }
-  ul.topnav.responseNav li.dropdownIcon {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  ul.topnav.responseNav li {
-    display: inline;
-    float: none;
-  }
-  ul.topnav.responseNav li a {
-    display: block;
-    text-align: left;
-  }
-}
 
 /* ################### Landing Section ##################### */
 .container {
@@ -102,7 +77,13 @@ ul.topnav li.dropdownIcon {
   color: white;
 }
 .leftSide-col {
-  margin-left: 20%;
+  margin-left: 15%;
+}
+.rightSide-col {
+  margin-left: 15%;
+}
+.iframe {
+  width: 100%;
 }
 form h3 {
   color: rgb(203, 193, 193);
@@ -113,6 +94,8 @@ input[type="text"] {
   font-size: 20px;
   width: 400px;
   min-width: 150px;
+  border-radius: 5px;
+  border-width: 0;
 }
 .row {
   width: 100%;
@@ -160,4 +143,49 @@ input[type="text"] {
 }
 .col-12 {
   width: 100%;
+}
+
+/* ############### Mobile #################### */
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+  ul.topnav li.dropdownIcon {
+    display: block;
+    float: right;
+  }
+  ul.topnav.responseNav {
+    position: relative;
+  }
+  ul.topnav.responseNav li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  ul.topnav.responseNav li {
+    display: inline;
+    float: none;
+  }
+  ul.topnav.responseNav li a {
+    display: block;
+    text-align: left;
+  }
+  .row {
+    width: 100%;
+    /*    max-width: 100%*/
+    display: block;
+  }
+  .col-6 {
+    width: 100%;
+    margin: 0;
+  }
+  .leftSide-col,
+  .rightSide-col {
+    margin: 15px;
+    margin-bottom: 20px;
+  }
+  input[type="text"] {
+    width: 100%;
+  }
 }
