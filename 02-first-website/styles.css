@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 */
-    text-align: center;
+/*    text-align: center;*/
     background-color: azure            
 }
 h1, h2, h3{
@@ -15,15 +15,19 @@ h1, h2, h3{
 }
 .f1 {
     font-family: "Open Sans", serif;
+    letter-spacing: 3px;
+    word-spacing: 4px
 }
 .f2 {
     font-family: "Roboto Mono";
 }
 .f3{
     font-family: "Edu AU VIC WA NT Hand", cursive;
+    letter-spacing: 10px
 }
 .f4 {
     font-family: Audiowide;
+    word-spacing: 10px
 }
 
 ul li{
@@ -35,6 +39,7 @@ ul li{
 p{
     background-color: beige;
     padding: 20px;
+    
 }
 .seeker{
     font-size: 24px;
@@ -42,7 +47,26 @@ p{
 .header {
     color: azure;
     text-shadow: 2px 4px 5px blue;
-    font-family: sans-serif
+    font-family: sans-serif;
+}
+.img1{
+    border-radius: 50%;
+    border: 10px solid #ddd; 
+    padding: 5px;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto    
+        
+}
+.img2 {
+    opacity: 0.6;
+    border-radius: 20px;    
+    padding: 10px;
+    width: 500px;
+        
+        
 }
 .table {
     background: linear-gradient(yellow, lavenderblush);
