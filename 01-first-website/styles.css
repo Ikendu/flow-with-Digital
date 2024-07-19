@@ -1,20 +1,60 @@
 /*########### Default ##############*/
 
-nav,header,footer{
-    display: block
+nav,
+header,
+footer {
+  display: block;
 }
-body{
-    margin: 0;
-    line-height: 1; /* to be tested*/
+
+body {
+  margin: 0px;
+  line-height: 1;
+  background-color: rgb(21, 149, 149);
 }
 
 /*########### Nav bar ##############*/
 
 nav {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
 }
+
 nav ul {
-    background-color: #eee;
-    margin: 0;
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul.topnav li {
+  float: left;
+  list-style: none;
+}
+ul.topnav li.topnav-right {
+  float: right;
+}
+ul.topnav li a {
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #666;
+}
+ul.topnav li a:hover {
+  background-color: #0080ff;
+  color: #fff;
+}
+ul.topnav li.dropdownIcon {
+  display: none;
+}
+/* ############### Nav Mobile #################### */
+
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+  ul.topnav li.dropdownIcon {
+    display: block;
+    float: right;
+  }
 }
