@@ -57,4 +57,21 @@ ul.topnav li.dropdownIcon {
     display: block;
     float: right;
   }
+  ul.topnav.responseNav {
+    position: relative;
+  }
+  ul.topnav.responseNav li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  ul.topnav.responseNav li {
+    display: inline;
+    float: none;
+  }
+  ul.topnav.responseNav li a {
+    display: block;
+    text-align: left;
+  }
 }
