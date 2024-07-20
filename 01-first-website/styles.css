@@ -192,7 +192,7 @@ article p {
 /* ####### FOOTER ########## */
 footer.footsy {
   background-color: #666;
-  padding-left: 10%;
+  padding-left: 15%;
 }
 footer.footsy h1 {
   color: #fff;
@@ -214,6 +214,9 @@ footer ul li {
 }
 .stack {
   display: flex;
+}
+.mobileStack {
+  margin-right: 20%;
 }
 
 /* ############### Mobile #################### */
@@ -269,5 +272,8 @@ footer ul li {
   }
   article p {
     font-size: 17px;
+  }
+  footer.footsy {
+    padding-left: 5%;
   }
 }
