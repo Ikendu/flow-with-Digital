@@ -1,15 +1,19 @@
 let num1 = document.getElementById("num1");
 let num2 = document.getElementById("num2");
+let calcForm = document.getElementById("calcForm");
 let calc = document.getElementById("calc");
 let result = document.getElementById("result");
 
-let value1 = (num1.value = "Hello");
-let value2 = (num2.value = "A sign");
-result.innerText = "Sign Up";
+calcForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-// calc.onclick((e) => calculate(e, value1, value2));
+  if (!num1.value || !num2.value) {
+    alert("Please make sure to enter approprate value");
+  } else {
+    let smallNum = Number(num1.value);
+    let bigNum = Number(num2.value);
 
-// function calculate(e, value1, value2) {
-//   e.preventDefault();
-//   console.log(value1, value2);
-// }
+    let percentage = (smallNum / bigNum) * 100;
+    result.innerText = "Result: " + percentage + "%";
+  }
+});
