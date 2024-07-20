@@ -61,9 +61,9 @@ ul.topnav li.dropdownIcon {
 #section-gradient {
   background: #067dff;
   background: linear-gradient(#067dff, #65a5ff, #067dff);
-  background: -webkit-linear-gradient(#067dff, #65a5ff, , #067dff);
-  background: -o-linear-gradient(#067dff, #65a5ff, , #067dff);
-  background: -moz-linear-gradient(#067dff, #65a5ff, , #067dff);
+  background: -webkit-linear-gradient(#067dff, #65a5ff, #067dff);
+  background: -o-linear-gradient(#067dff, #65a5ff, #067dff);
+  background: -moz-linear-gradient(#067dff, #65a5ff, #067dff);
 }
 .container h1.larger {
   font-size: 56px;
@@ -173,6 +173,48 @@ input[type="text"] {
   text-align: center;
   margin: 20px;
 }
+article p {
+  padding: 20px;
+  font-size: 25px;
+  line-height: 1.8;
+  text-align: justify;
+}
+.sectionImage {
+  margin: 20px;
+}
+.sectionImage img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: -2px /*Hori*/ -2px /*Vert*/ 20px /*Blur*/ 2px /*Sprd*/ rgba(0
+          /*Sh*/, 0 /*BG*/, 0 /*BoxColor*/, 0.15 /*Opacity*/),
+    2px 2px 10px 2px rgba(0, 0, 0, 1);
+}
+/* ####### FOOTER ########## */
+footer.footsy {
+  background-color: #666;
+  padding-left: 10%;
+}
+footer.footsy h1 {
+  color: #fff;
+  font-size: 35px;
+}
+footer ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
+}
+footer ul li {
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.footrow {
+  display: flex;
+  width: 100%;
+}
+.stack {
+  display: flex;
+}
 
 /* ############### Mobile #################### */
 @media screen and (max-width: 680px) {
@@ -200,14 +242,21 @@ input[type="text"] {
     display: block;
     text-align: left;
   }
-  .row {
-    width: 100%;
-    /*    max-width: 100%*/
-    display: block;
-  }
-  .col-6 {
+
+  .col-6,
+  .col-7,
+  .col-5,
+  .col-4 {
     width: 100%;
     margin: 0;
+  }
+  .box {
+    display: block;
+    margin: 0;
+  }
+  .stack {
+    display: block;
+    margin-right: 20%;
   }
   .leftSide-col,
   .rightSide-col {
@@ -217,5 +266,8 @@ input[type="text"] {
 
   input[type="text"] {
     width: 100%;
+  }
+  article p {
+    font-size: 17px;
   }
 }
