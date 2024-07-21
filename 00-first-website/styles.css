@@ -80,6 +80,15 @@ p{
     background: linear-gradient(to right, lightblue, white)
 }
 
+
+.img{
+    width: 300px;
+    height: 300px; 
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
 /*Grid system*/
 .row {
     width: 100%;
@@ -87,16 +96,9 @@ p{
     display: flex;        
 }
 .row::after{
-    display: block
+    display: block;
     clear: both;
     content: ""        
-}
-.img{
-    width: 300px;
-    height: 300px; 
-    object-fit: cover;
-    display: block;
-    margin: auto;
 }
 .col-1 {width: 8.33%}
 .col-2 {width: 16.66%}
