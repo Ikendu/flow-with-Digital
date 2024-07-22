@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 VIDEOS
+TUTorial Videos
 
 # Editor directories and files
 .vscode/*
