@@ -1,6 +1,13 @@
-.container-fluid {
+.signin_body {
+  background-color: #e6f2ff;
 }
 .row {
 }
-[class*="col-"] {
+.col-sm-8 {
+}
+.container.signin_container {
+  margin-top: 15%;
+}
+.card.signin_card {
+  border: 2px solid rgba(0, 0, 0, 0.7);
 }
