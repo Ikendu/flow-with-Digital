@@ -9,5 +9,24 @@
   margin-top: 15%;
 }
 .card.signin_card {
-  border: 2px solid rgba(0, 0, 0, 0.7);
+  background-color: #f4f4f4;
+  padding: 40px 0 20px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.signin_img {
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+form.signin_form {
+  max-width: 70%;
+  margin: auto;
+}
+button.signin_button {
+  color: #fff;
+  background-color: #d64829;
+  width: 100%;
 }
