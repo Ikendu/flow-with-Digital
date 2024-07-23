@@ -35,6 +35,19 @@ button.placesBtn {
   display: inline-block;
   font-weight: 800;
 }
+
+.formModelWrapper {
+  margin: auto;
+  padding-top: 10px;
+  align-items: center;
+}
 .modelHead h1 label {
   color: red;
+}
+.formGroup {
+  width: 100%;
+  text-align: center;
+}
+.form-group {
+  width: 100%;
 }
