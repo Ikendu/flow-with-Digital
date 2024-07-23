@@ -13,6 +13,9 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.img-fluid {
+  border-radius: 8px;
+}
 .placesWrapper {
   margin: 50px;
 }
@@ -20,4 +23,18 @@
 button.placesBtn {
   display: block;
   margin: auto;
+}
+.modelHead {
+  text-align: center;
+}
+.modelHead h1 {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: 800;
+}
+.modelHead h1 label {
+  color: red;
 }
