@@ -2,3 +2,14 @@
   background: none;
   text-align: center;
 }
+
+.sectionLight {
+  background-color: #eceeef;
+  padding-bottom: 20px;
+}
+
+.sectionDark {
+  background-color: #cccccc;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
