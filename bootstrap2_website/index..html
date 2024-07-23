@@ -7,6 +7,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Bootstrap CSS -->
     <!-- <link
       rel="stylesheet"
@@ -214,7 +218,11 @@
               <div class="col-sm-12 col-lg-4">
                 <img class="img-fluid imgCenter" src="assets/a3.jpg" alt="" />
                 <div class="row">
-                  <div class="col-sm-12">
+                  <div
+                    class="col-sm-12"
+                    data-toggle="modal"
+                    data-target=".mordern-modal-lg"
+                  >
                     <button class="btn btn-lg btnCenter">
                       Explore mordern cities
                     </button>
@@ -227,7 +235,7 @@
                   <div
                     class="col-sm-12"
                     data-toggle="modal"
-                    data-target=".forest-modal-lg"
+                    data-target=".acient-modal-lg"
                   >
                     <button class="btn btn-lg btnCenter">
                       Explore Acient wonders
@@ -253,6 +261,31 @@
           </div>
         </div>
       </div>
+
+      <!-- Footer Section -->
+
+      <footer class="footer bg-dark">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 col-lg-3">
+              <img
+                src="assets/footerImg.jpg"
+                alt=""
+                class="img-fluid footerImg"
+              />
+              <h3>Explore Life</h3>
+            </div>
+            <div class="col-sm-12 col-lg-9 footerMedia">
+              <i class="fa fa-facebook-square fa-3x"></i>
+              <i class="fa fa-google-plus-square fa-3x"></i>
+              <i class="fa fa-instagram fa-3x"></i>
+              <i class="fa fa-linkedin fa-3x"></i>
+              <i class="fa fa-twitter-square fa-3x"></i>
+              <i class="fa fa-github fa-3x"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
 
       <!-- Modal -->
       <!-- Form Modal -->
@@ -349,6 +382,54 @@
 
       <!-- Each of the three Buttons trigger each modal can be here -->
 
+      <!-- Modal 1-->
+      <div
+        class="modal fade mordern-modal-lg"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Expore more places
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Q2IqG9WOk3w?si=XwfMF5qFnMABu21J"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p>Ultra Mordern cities</p>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Modal 2-->
       <div
         class="modal fade acient-modal-lg"
@@ -360,8 +441,12 @@
           <div class="modal-content">
             <div class="embed-responsive embed-responsive-16by9">
               <iframe
-                class="embed-responsive-item"
-                src="https://www.youtube.com/embed/IEYAx_4xq54?si=tvC_BfNmKaqX_Xar"
+                src="https://www.youtube.com/embed/KQnQC77oQNU?si=4fuUkdEsVzjSJcPR"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
               ></iframe>
             </div>
             <div class="modal-footer">

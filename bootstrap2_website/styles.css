@@ -67,3 +67,35 @@ button.btnCenter {
   width: 86%;
   color: white;
 }
+
+.mordern-cities {
+  text-align: center;
+}
+
+.footer {
+  padding: 20px;
+}
+
+.footerImg {
+  height: 80px;
+  display: block;
+  margin: auto;
+}
+.footer h3 {
+  color: white;
+  text-align: center;
+}
+.fa {
+  margin: 10px;
+}
+.fa-facebook-square {
+  color: #3d5998;
+}
+
+.fa-google-plus-square {
+  color: #c32f10;
+}
+
+.footerMedia {
+  text-align: center;
+}
