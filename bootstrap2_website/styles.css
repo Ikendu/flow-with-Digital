@@ -45,8 +45,10 @@ button.placesBtn {
 .modelHead h1 label {
   color: red;
 }
-.formGroup {
-}
+
 .form-group {
+  width: 100%;
+}
+.form-control {
   width: 100%;
 }
