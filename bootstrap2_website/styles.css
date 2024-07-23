@@ -13,3 +13,11 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.placesWrapper {
+  margin: 50px;
+}
+
+button.placesBtn {
+  display: block;
+  margin: auto;
+}
