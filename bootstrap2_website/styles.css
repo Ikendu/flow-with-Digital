@@ -52,13 +52,18 @@ button.placesBtn {
 .form-control {
   width: 100%;
 }
+
 img.imgCenter {
   display: block;
   margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
+
 button.btnCenter {
   display: block;
   margin: auto;
   background-color: red;
-  width: 100%;
+  width: 86%;
+  color: white;
 }
