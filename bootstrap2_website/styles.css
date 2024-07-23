@@ -38,6 +38,7 @@ button.placesBtn {
 
 .formModelWrapper {
   margin: auto;
+  width: 100%;
   padding-top: 10px;
   align-items: center;
 }
@@ -45,8 +46,6 @@ button.placesBtn {
   color: red;
 }
 .formGroup {
-  width: 100%;
-  text-align: center;
 }
 .form-group {
   width: 100%;
