@@ -71,4 +71,12 @@ header.nav-header {
   width: 100%;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 /*# sourceMappingURL=app.css.map */
