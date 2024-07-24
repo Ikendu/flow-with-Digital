@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Georgia, Times, serif;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: #008975;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.header h1 {
+  padding: 20px;
+}
+.header ul {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+#main-nav {
+  background-color: #4ae6ce;
+  width: 100%;
+  display: inline-block;
+  padding: 10px 0 40px;
+}
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#main-nav ul li {
+  float: left;
+  margin-left: 30px;
+}
+#main-nav ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #7e7676;
+}
+#main-nav ul li a:hover {
+  color: red;
+}
+
+.pro-img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #4ae6ce;
+  -webkit-box-shadow: 0 0 12px #555;
+  -moz-box-shadow: 0 0 12px #555;
+  box-shadow: 0 0 12px #555;
+  background-color: #4ae6ce;
+  width: 22%;
+  height: 120px;
+  display: inline-block;
+  float: left;
+  margin: 15px;
+}
+
+/*# sourceMappingURL=app.css.map */
