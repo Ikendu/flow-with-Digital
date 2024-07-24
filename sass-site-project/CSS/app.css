@@ -3,8 +3,35 @@ img.logo {
   width: 50px;
 }
 
-header.nav-header {
-  display: flex;
+.nav-header {
+  padding: 0 0 10px;
+  background-color: #fff;
+}
+.nav-header .container {
+  padding: 10px 15px 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nav-menu {
+  float: right;
+  margin: 5px 0 0;
+}
+.nav-menu .nav-menu-list {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-menu .nav-menu-list .nav-item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+.nav-menu .nav-menu-list .nav-item .nav-a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #212630;
 }
 
 * {
