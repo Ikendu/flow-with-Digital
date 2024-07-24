@@ -1,14 +1,66 @@
 body {
   background-color: #e6f2ff;
+  max-width: 600px;
+  margin: auto;
 }
 
 section {
   background-color: #c6f;
   color: #333;
   width: 780px;
-  margin: 20px;
+  margin: auto;
+  margin-top: 30px;
   border-radius: 7px;
   padding: 20px;
+}
+
+.thumb1 {
+  height: 180px;
+  width: 180px;
+  border-radius: 10px;
+  background-color: #333;
+  color: #e6f2ff;
+  padding: 10px;
+  margin: auto;
+}
+
+.thumb2 {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #6600cc;
+  color: #e6f2ff;
+}
+
+.btn-1 {
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: #6600cc;
+  color: white;
+  border-width: 0;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+.btn-1:hover {
+  background-color: #9933ff;
+}
+
+.btn-2 {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #c6f;
+  color: black;
+  border-width: 0;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+.btn-2:hover {
+  background-color: #eeccff;
+}
+.btn-2:hover {
+  background-color: #aa00ff;
 }
 
 /*# sourceMappingURL=styles.css.map */
