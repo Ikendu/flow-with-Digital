@@ -1,0 +1,16 @@
+.alert
+    border: 2px solid orange
+    padding: 5px
+    +borderRad(10px)
+    margin: 10px 5px 10px
+.success
+    @extend .alert
+    background-color: lighten(green, 50%)    
+.warning
+    @extend .alert
+    background-color: yellow   
+
+.danger
+    @extend .alert
+    background-color: red
+    color: white      

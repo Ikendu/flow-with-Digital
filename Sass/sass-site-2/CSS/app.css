@@ -67,4 +67,26 @@ h1 {
   margin: 15px;
 }
 
+.alert, .danger, .warning, .success {
+  border: 2px solid orange;
+  padding: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin: 10px 5px 10px;
+}
+
+.success {
+  background-color: #80ff80;
+}
+
+.warning {
+  background-color: yellow;
+}
+
+.danger {
+  background-color: red;
+  color: white;
+}
+
 /*# sourceMappingURL=app.css.map */
