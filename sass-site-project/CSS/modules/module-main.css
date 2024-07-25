@@ -11,4 +11,17 @@
   border-radius: 50px;
 }
 
+.btn {
+  background-color: red;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.buy-btn-lg {
+  width: 100%;
+}
+
 /*# sourceMappingURL=module-main.css.map */

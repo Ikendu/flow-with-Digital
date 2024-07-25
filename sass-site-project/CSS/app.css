@@ -1,7 +1,6 @@
-.img-block, .b-card .b-video-image {
+.img-block, .gear-img, .b-card .b-video-image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 img.logo {
@@ -149,7 +148,7 @@ img.logo {
 }
 
 .b-card {
-  padding: 40px;
+  padding: 50px 20px;
   text-align: center;
   color: #fff;
   background-color: #212630;
@@ -173,10 +172,14 @@ img.logo {
 }
 
 .about-text {
-  margin: 0 0 50px;
+  margin: 50px 20px;
   color: #363e4e;
-  letter-spacing: -0.0252em;
   font-size: 20px;
+  text-align: justify;
+}
+
+.gear-img {
+  margin-top: 30px;
 }
 
 .img-list {
@@ -190,6 +193,19 @@ img.logo {
   vertical-align: middle;
   height: 100px;
   border-radius: 50px;
+}
+
+.btn {
+  background-color: red;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.buy-btn-lg {
+  width: 100%;
 }
 
 /*# sourceMappingURL=app.css.map */
