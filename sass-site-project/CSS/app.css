@@ -115,6 +115,18 @@ img.logo {
   display: block;
 }
 
+.splitter-container {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #e8e3e3;
+}
+
+.about-container {
+  background-color: #f6f5f5;
+  padding: 70px 0;
+  min-height: 540px;
+}
+
 .banner-container {
   background-color: #1d222a;
   padding: 60px;
@@ -147,11 +159,37 @@ img.logo {
 .b-card .b-title {
   font-size: 27px;
   font-weight: 700;
-  color: #fffcfc;
+  color: #e8e3e3;
   margin: 0 0 15px;
 }
 .b-card .b-video-image {
   padding: 20px 0 10px;
+}
+
+.about-title {
+  font-size: 2rem;
+  margin: 30px 0 0;
+  color: #212630;
+}
+
+.about-text {
+  margin: 0 0 50px;
+  color: #363e4e;
+  letter-spacing: -0.0252em;
+  font-size: 20px;
+}
+
+.img-list {
+  margin: 0 20px 40px;
+  padding: 0;
+}
+
+.img-item {
+  display: inline-block;
+  margin: 0 30px 40px;
+  vertical-align: middle;
+  height: 100px;
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=app.css.map */
