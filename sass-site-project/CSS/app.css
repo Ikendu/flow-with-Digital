@@ -182,6 +182,47 @@ img.logo {
   margin-top: 30px;
 }
 
+#page-footer {
+  background-color: #212630;
+  clear: both;
+  padding: 25px 0 40px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-container {
+  padding: 0 10%;
+}
+
+.lego-footer {
+  font-size: "Roboto Slab", serif;
+  font-weight: 200;
+  color: #e8e3e3;
+}
+
+.footer-wrapper {
+  display: inline-block;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.footer-link {
+  margin-right: 36px;
+  color: #e8e3e3;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: #CD4B3D;
+}
+
+.last {
+  display: block;
+  position: absolute;
+  right: 0;
+}
+
 .img-list {
   margin: 0 20px 40px;
   padding: 0;
