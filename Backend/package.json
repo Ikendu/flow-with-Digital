@@ -1,5 +1,15 @@
 {
   "dependencies": {
     "express": "^4.19.2"
-  }
+  },
+  "name": "items",
+  "version": "1.0.0",
+  "description": "food items collection",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ExploreWealth",
+  "license": "ISC"
 }
