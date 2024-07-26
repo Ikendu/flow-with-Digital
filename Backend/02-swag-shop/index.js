@@ -51,6 +51,7 @@ app.post(`/wishlist`, async (req, res) => {
   //   console.log(response);
 });
 
+// list all the wishlist with all the data associated with the products id
 app.get(`/wishlist`, async (req, res) => {
   const allList = await WishList.find({}) // find the wishlists id
     .populate({ path: `products`, model: `Product` }) // add all other data that belong to the id
@@ -59,7 +60,14 @@ app.get(`/wishlist`, async (req, res) => {
   else res.status(500).send({ error: `No list found` });
 });
 
+// update the id in the wishList products
 app.put(`/wishlist/add`, async (req, res) => {
-  const { id, title } = req.body;
+  const { wishlistID, productId } = req.body;
+  const product = await Product.findOne({ _id: productId });
+  await WishList.update(
+    { _id: wishlistID },
+    { $addToSet: { products: product._id } }
+  );
 });
+
 app.listen(3000, () => console.log(`Connected at port 3000`));
