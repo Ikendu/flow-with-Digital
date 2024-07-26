@@ -7,7 +7,7 @@ app.use(bodyParser.json()); // using the json function of the middleware to hand
 app.use(bodyParser.urlencoded({ extended: false })); // to make sure we only work with arrays, object, and strings.
 // Reject anything that is not properly formatted
 
-const items = [
+const foodItems = [
   {
     id: "asd123",
     name: "tea",
@@ -30,8 +30,18 @@ const items = [
   },
 ];
 
+// for getting items from the server
 app.get(`/`, (req, res) => {
-  res.send(items);
+  res.json(foodItems);
+});
+
+// for posting items to the server
+app.post(`/`, (req, res) => {
+  let postItem = req.body;
+  if (!postItem || !postItem.name)
+    return res.status(500).json({ error: `Send a complete object` });
+  foodItems.push(req.body);
+  return res.status(200).json(foodItems);
 });
 
 app.listen(3000, () => {
