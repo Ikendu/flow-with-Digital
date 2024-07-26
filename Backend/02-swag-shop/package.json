@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  },
+  "name": "items",
+  "version": "1.0.0",
+  "description": "online shopping swag",
+  "main": "app.js",
+  "scripts": {
+    "app": "nodemon index.js"
+  },
+  "author": "ExploreWealth",
+  "license": "ISC"
+}
