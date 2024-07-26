@@ -1,5 +1,11 @@
-const express = require(`express`);
+const express = require(`express`); // for handling user request and sending responses
 const app = express();
+const bodyParser = require(`body-parser`); // middleware for handling objects
+
+app.use(bodyParser.json()); // using the json function of the middleware to handle object data
+
+app.use(bodyParser.urlencoded({ extended: false })); // to make sure we only work with arrays, object, and strings.
+// Reject anything that is not properly formatted
 
 const items = [
   {
