@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require(`body-parser`);
 
 const Product = require(`./models/product`);
+const WishList = require(`./models/wishlist`);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -31,7 +32,6 @@ app.get(`/products`, async (req, res) => {
   //   let allProducts = await Product.find({});
   //   res.status(200).json(allProducts);
   //      OR
-
   Product.find({}, (err, allProducts) => {
     if (err) {
       return res
@@ -43,4 +43,23 @@ app.get(`/products`, async (req, res) => {
   });
 });
 
+app.post(`/wishlist`, async (req, res) => {
+  const { title } = req.body;
+  let wishlist = new WishList();
+  wishlist.title = title;
+  const response = await WishList.save(wishlist);
+  //   console.log(response);
+});
+
+app.get(`/wishlist`, async (req, res) => {
+  const allList = await WishList.find({}) // find the wishlists id
+    .populate({ path: `products`, model: `Product` }) // add all other data that belong to the id
+    .exec();
+  if (allList) res.send(allList);
+  else res.status(500).send({ error: `No list found` });
+});
+
+app.put(`/wishlist/add`, async (req, res) => {
+  const { id, title } = req.body;
+});
 app.listen(3000, () => console.log(`Connected at port 3000`));
