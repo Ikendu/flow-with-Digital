@@ -61,10 +61,10 @@ app.get(`/wishlist`, async (req, res) => {
 
 // update the id in the wishList products
 app.put(`/wishlist/add`, async (req, res) => {
-  const { wishlistID, productId } = req.body;
+  const { wishlistId, productId } = req.body;
   const product = await Product.findOne({ _id: productId });
-  const updatedList = await WishList.update(
-    { _id: wishlistID },
+  const updatedList = await WishList.updateOne(
+    { _id: wishlistId },
     { $addToSet: { products: product._id } }
   );
   res.send(updatedList);
