@@ -1,9 +1,17 @@
+// Not yet fully tested
+
 const express = require(`express`);
 const app = express();
 const bodyParser = require(`body-parser`);
+const mongoose = require(`mongoose`);
+const dotenv = require(`dotenv`).config();
 
 const Product = require(`./models/product`);
 const WishList = require(`./models/wishlist`);
+
+const dbConnect = mongoose
+  .connect(process.env.MONGODB_URL)
+  .then(console.log(`Database connected to MongoDB `));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -12,43 +20,34 @@ app.get(`/`, (req, res) => {
   res.send(`We are getting ready`);
 });
 
-app.post(`/product`, (req, res) => {
-  //   let product = new Product(req.body);          OR
-
-  //   let { title, price } = req.body;
-  //   let product = new Product({ title, price });  OR
-
-  let product = new Product();
-  product.title = req.body.title;
-  product.price = req.body.price;
-
-  product.save((err, savedItem) => {
-    if (err) return res.status(500).json({ error: `Something went wrong` });
-    else return res.status(200).json(savedItem);
-  });
+app.post(`/product`, async (req, res) => {
+  try {
+    const savedItems = await Product.create({ ...req.body });
+    res.status(200).json(savedItems);
+  } catch (e) {
+    console.log(`Product not created`, e);
+    res.json(`Try again letter`, e);
+  }
 });
 
 app.get(`/products`, async (req, res) => {
-  //   let allProducts = await Product.find({});
-  //   res.status(200).json(allProducts);
-  //      OR
-  Product.find({}, (err, allProducts) => {
-    if (err) {
-      return res
-        .status(500)
-        .json({ error: `We could not process your request` });
-    } else {
-      return res.json(allProducts);
-    }
-  });
+  try {
+    let allProducts = await Product.find({});
+    res.status(200).json(allProducts);
+  } catch (e) {
+    res.status(400).json(e);
+  }
 });
 
 app.post(`/wishlist`, async (req, res) => {
   const { title } = req.body;
-  let wishlist = new WishList();
-  wishlist.title = title;
-  const response = await WishList.save(wishlist);
-  //   console.log(response);
+  try {
+    let myList = await WishList.create({ title });
+    console.log(myList);
+    res.json(myList);
+  } catch (e) {
+    res.json(e);
+  }
 });
 
 // list all the wishlist with all the data associated with the products id
@@ -62,12 +61,13 @@ app.get(`/wishlist`, async (req, res) => {
 
 // update the id in the wishList products
 app.put(`/wishlist/add`, async (req, res) => {
-  const { wishlistID, productId } = req.body;
+  const { wishlistId, productId } = req.body;
   const product = await Product.findOne({ _id: productId });
-  await WishList.update(
-    { _id: wishlistID },
+  const updatedList = await WishList.updateOne(
+    { _id: wishlistId },
     { $addToSet: { products: product._id } }
   );
+  res.send(updatedList);
 });
 
 app.listen(3000, () => console.log(`Connected at port 3000`));
